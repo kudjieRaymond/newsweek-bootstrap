@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+.header-top{
+	height: 95px;
+	background-color: #f72210;
+	color:#fff;
+	display: flex;
+	align-items: flex-end;
+}
+.txt-left{
+	text-align:left;
+}
+.txt-center{
+	text-align:center;
+}
+.txt-right{
+	text-align:right;
+}
+.txt-gray{
+	color: gray;
+}
+.header-top h1 {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 4rem;
+    font-weight: 400;
+}
+.header-top-item p {
+    height: 20px;
+}
+.header-top-item button {
+    background: #fff;
+    color: red;
+    border: 0;
+}
+.navbar-container{
+	
+}
+.navbar{
+	display:flex;
+	flex-direction: row;
+	width:100%;
+	border-bottom: 1px solid#d9d9d9;
+	
+}
+.navbar >li{
+	width:9%;
+	list-style: none;
+	border-right:1px solid#d9d9d9;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	font-weight:700;
+	line-height: 24px;
+	font-size: 20px
+
+}
+.navbar .tech{
+	width:15%;
+}
+ a, a:hover{
+	text-decoration: none;
+	color:#000;
+}
+.navbar li a:hover{
+	color: red;
+}
+
+
+.article-image img{
+	width:100%;
+}
+.wrap{
+	position:relative;
+}
+.category{
+	padding: 8px 15px 9px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background-color: rgba(255,255,255,.9);
+	z-index: 1;
+	
+}
+.category a {
+    color: #f72210;
+}
+.link{
+	padding:15px 0 10px 0 ;
+	font-weight:700;
+}
+.link a:hover{
+	text-decoration: underline;
+	text-decoration-color:  #f72210;
+}
+.summary{
+	margin-bottom:13px;
+}
+
+.related {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 16px 0 ;
+	margin-bottom: 30px;
+	border-top :1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	font-weight: 700;
+}
+.related a:hover{
+	color: #f72210;
+}
+.insight{
+	border:1px solid#d9d9d9;
+	margin-bottom:30px;
+}
+.insight .category a {
+    color: #0b6fb1;
+}
+.story{
+	border-top:1px solid#d9d9d9;
+	padding-top:20px;
+}
+.story-link a:hover{
+	text-decoration: underline;
+	text-decoration-color:  #f72210;
+}
+.story-link{
+	font-weight:700;
+}
+
