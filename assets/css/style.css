@@ -135,4 +135,35 @@ body{
 .story-link{
 	font-weight:700;
 }
+.opinion .article-image img{
+	border-radius:50%;
+	width:100%;
+}
+.opinion, .news{
+	font-size:14px;
+	border-bottom: 1px solid #d9d9d9;
+	margin-top:13px;
+}
+.opinion-last, .news-last{
+	border-bottom:none;
+}
+.opinion-link{
+	font-weight:700;
+	
+}
+.opinion-link a:hover{
+	color:  #f72210;
 
+}
+.opinion p{
+	font-size:13px;
+}
+ .news-last{
+	border-bottom:none;
+	margin-bottom: 20px;
+}
+
+.newsletter{
+	border: 1px solid #d9d9d9;
+	margin:20px 0;
+}
