@@ -278,3 +278,23 @@ body{
 	font-size:2rem;
 	color: #f72210;
 }
+.footer-top p{
+	margin-top:10px;
+}
+footer ul{
+	display :flex;
+	flex-direction:row
+}
+footer ul li{
+	list-style: none;
+	padding:3px;
+	border-right:1px solid #d9d9d9;
+}
+footer ul li:last-child{
+	
+	border-right:none;
+}
+footer ul li a{
+	
+	color:rgb(104, 99, 99);
+}
