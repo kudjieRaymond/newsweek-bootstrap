@@ -26,7 +26,7 @@ body{
 .txt-gray{
 	color: gray;
 }
-.header-top h1 {
+.header-top h1{
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 4rem;
     font-weight: 400;
@@ -135,14 +135,21 @@ body{
 .story-link{
 	font-weight:700;
 }
+.opinion .article-image {
+	width:100%;
+	height:100%;
+}
 .opinion .article-image img{
 	border-radius:50%;
 	width:100%;
+	height:100%;
+
 }
 .opinion, .news{
 	font-size:14px;
 	border-bottom: 1px solid #d9d9d9;
 	margin-top:13px;
+	padding-bottom:13px;
 }
 .opinion-last, .news-last{
 	border-bottom:none;
@@ -166,4 +173,108 @@ body{
 .newsletter{
 	border: 1px solid #d9d9d9;
 	margin:20px 0;
+}
+.newsletter-top {
+	display:flex;
+	flex-direction: row;
+}
+.newsletter-top > span{
+	display: inline-block;
+	background-color: #f72210;
+	padding:2px 5px;
+	margin-top:10px;
+	color :#fff;
+	font-size: 20px;
+	font-weight:700;
+	width: 10%;
+	height: 35px;
+}
+.newsletter-top > p{
+	margin-left:5px;
+	width: 90%;
+	
+}
+.signup >button{
+	background: rgb(53, 51, 51);
+	color: #fff;
+	border:0;
+	padding :10px;
+}
+.signup + h6{
+	margin-top:10px;
+	font-size:13px;
+	font-weight:700;
+}
+
+.mag-category{
+	margin-top:10px;
+	
+}
+.mag-category a {
+    color: #f72210;
+}
+.mag-category span {
+	background-color: #f72210;
+	color: #fff;
+	padding: 5px 15px 9px;
+
+}
+.title{
+	margin:10px 0 20px 0
+}
+
+
+.magazine-top  .span-cont {
+	padding:5px 3px;
+	border-right: 2px solid #f72210;
+
+	border-bottom: 2px solid #f72210;
+	border-bottom-width: -70%;
+
+	
+	
+}
+.magazine-top  span span{
+	background-color: #f72210;
+	color :#fff;
+	font-size: 20px;
+	font-weight:700;
+	width: 10%;
+	padding: 3px 7px;
+	height: 35px;
+	margin:1px;
+}
+.magazine-top > a{
+	margin-left:5px;
+	width: 90%;
+	font-weight:700;
+	
+}
+.cat{
+	color: #f72210;
+}
+.subscribe{
+	background-color: rgb(247, 236, 236);
+}
+.subscribe-btn{
+	background: #f72210;
+	color: #fff;
+	border:0;
+	padding :10px;
+}
+.subscribe-btn>span{
+	font-size:20px;
+	font-weight:700;
+}
+.footer-top{
+	padding:15px 0;
+	border-top:1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	margin:15px 0;
+}
+.logo {
+	font-family: 'Alfa Slab One', cursive;
+	font-weight: 300;
+	font-size:2rem;
+	color: #f72210;
 }
