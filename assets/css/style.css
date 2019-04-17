@@ -6,6 +6,7 @@
 body {
 	font-family: "Roboto Condensed", sans-serif;
 }
+
 .header-top {
 	height: 95px;
 	background-color: #f72210;
@@ -32,13 +33,16 @@ body {
 }
 .header-top-item p {
 	height: 20px;
-	font-weight:700
+	font-weight: 700;
 }
 .header-top-item button {
 	background: #fff;
 	color: red;
 	border: 0;
-	padding:4px 6px;
+	padding: 4px 6px;
+}
+header .menu-icon{
+	display:none;
 }
 .navbar-container {
 }
@@ -65,12 +69,12 @@ body {
 	width: 15%;
 }
 .navbar li:last-child {
-	border:none;
+	border: none;
 }
-.navbar li:last-child img{
+.navbar li:last-child img {
 	width: 30%;
-	height:30%;
-	padding-left:5px;
+	height: 30%;
+	padding-left: 5px;
 }
 a,
 a:hover {
@@ -79,6 +83,34 @@ a:hover {
 }
 .navbar li a:hover {
 	color: red;
+}
+
+.left {
+	height: 1600px;
+	border: none;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+.child {
+	height: 100%;
+	margin-right: -50px;
+	padding-right: 50px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.middle {
+	position: relative;
+	height: 1600px;
+	z-index: 1;
+	background-color: #fff;
+}
+.right {
+	position: relative;
+	height: 1600px;
+	overflow-x: hidden;
+	border: none;
+	overflow-x: hidden;
 }
 
 .article-image img {
@@ -185,8 +217,9 @@ a:hover {
 .newsletter-top > span {
 	display: inline-block;
 	background-color: #f72210;
-	padding: 2px 5px;
+	padding: 2px 4px;
 	margin-top: 10px;
+	margin-bottom:3px;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 700;
@@ -291,4 +324,261 @@ footer ul li:last-child {
 }
 footer ul li a {
 	color: rgb(104, 99, 99);
+}
+
+@media screen and (max-width: 766px) {
+	header .menu-icon{
+		display:inline;
+	}
+	.header-top {
+		height: 50px;
+	}
+	.header-top .col-md-6 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.header-top .col-md-3 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+	.txt-left,
+	.navbar-container {
+		display: none;
+	}
+	.header-top h1 {
+		font-family: "Alfa Slab One", cursive;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	.txt-center {
+		text-align: left;
+	}
+
+	.left {
+		height: auto;
+		border: none;
+		overflow: scroll;
+	}
+	.child {
+		height: 100%;
+		margin-right: -50px;
+		padding-right: 50px;
+		overflow-y: scroll;
+	}
+
+	.middle {
+		position: relative;
+		height: auto;
+	}
+	.right {
+		position: relative;
+		height: auto;
+		overflow: scroll;
+		border: none;
+	}
+
+	main .col-md-3 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.story .col-md-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.story .col-md-9 {
+		flex: 0 0 73%;
+		max-width: 73%;
+	}
+	.opinion .col-md-4 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.opinion .col-md-8 {
+		flex: 0 0 73%;
+		max-width: 73%;
+	}
+	.news .col-md-7 {
+		margin-top: 15px;
+	}
+
+	.row .most-read {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.row .offset-md-4 {
+		margin-left: 0;
+	}
+	.row .most-read .news .col-md-4 {
+		flex: 0 0 25%;
+		max-width: 25%;
+		height: 80px;
+	}
+	.row .most-read .news .col-md-8 {
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+
+	.row .subscribe {
+		margin-bottom: 15px;
+	}
+	.row .subscribe .row:last-child .subscribe-btn-cont {
+		margin-left: 45%;
+		margin-bottom: 10px;
+	}
+	.subscribe .news .col-md-5 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.subscribe .news .col-md-7 {
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+	.subscribe .news .article-image {
+		height: 150px;
+	}
+	.subscribe .news .article-image img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.footer-top .logo {
+		font-size: 1.5rem;
+	}
+	.footer-top img {
+		height: 28px;
+	}
+	.middle {
+		height: auto;
+	}
+}
+
+/**  990px**/
+@media screen and (min-width: 766px) and (max-width: 990px) {
+	/*header {
+		position:fixed;
+		top:0;
+		width: 100%;
+		margin-bottom: 100px;
+	}*/
+	header .menu-icon{
+		display:inline;
+	}
+	.header-top {
+		height: 50px;
+	}
+	.txt-left,
+	.navbar-container {
+		display: none;
+	}
+	.header-top h1 {
+		font-family: "Alfa Slab One", cursive;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	.txt-center {
+		text-align: left;
+	}
+	.txt-right p::after {
+		content: "";
+		width: 10px;
+		height: 18px;
+		background-color: blue;
+		background-image: url(../images/menu.png);
+		background-size: cover;
+		margin-left: 10px;
+	}
+
+	/**Main**/
+
+	.left {
+		height: auto;
+		border: none;
+		overflow: scroll;
+	}
+	.child {
+		height: 100%;
+		margin-right: -50px;
+		padding-right: 50px;
+		overflow-y: scroll;
+	}
+
+	.middle {
+		position: relative;
+		height: auto;
+	}
+	.right {
+		position: relative;
+		height: auto;
+		overflow: scroll;
+		border: none;
+	}
+
+	.col-md-3 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.right {
+		width: 100%;
+	}
+	.magazine .col-md-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.story .col-md-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.story .col-md-9 {
+		flex: 0 0 73%;
+		max-width: 73%;
+	}
+	.row .subscribe {
+		flex: 0 0 100%;
+		max-width: 100%;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		margin-bottom: 15px;
+	}
+	.row .subscribe .row:last-child .subscribe-btn-cont {
+		margin-left: 45%;
+		margin-bottom: 10px;
+	}
+	.subscribe .news .article-image {
+		height: 150px;
+	}
+	.subscribe .news .article-image img {
+		height: 100%;
+		width: 100%;
+	}
+	.row .subscribe .row {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.row .subscribe .row:last-child {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.row .most-read {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.row .offset-md-4 {
+		margin-left: 0;
+	}
+	.row .most-read .news .col-md-4 {
+		flex: 0 0 15%;
+		max-width: 15%;
+		height: 70px;
+	}
+	.footer-top .logo {
+		font-size: 1.5rem;
+	}
+	.footer-top img {
+		height: 28px;
+	}
 }
