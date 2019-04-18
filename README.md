@@ -3,7 +3,7 @@ This project attempts to build a clone of "News Week Magazine"  website which ca
 
 [https://www.newsweek.com/](https://www.newsweek.com/)
 
-### Live version Link on Github Pages:
+### Live version Link on Github Pages:https://kudjieraymond.github.io/newsweek-bootstrap/.
 
 =======
 
